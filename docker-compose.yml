@@ -1,0 +1,13 @@
+version: '2'
+services:
+  test:
+    image: test/test
+    hostname: test
+    container_name: test
+    environment:
+      dynamic.value : this_is_docker_os_variable
+    ports:
+      - 8080:8080/tcp
+    stdin_open: true
+    tty: true
+    privileged: true
