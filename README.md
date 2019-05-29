@@ -4,7 +4,7 @@ This example shows how to use springboot properties in docker or docker-compose
 In spring boot, variable processing priority is given according to the position of the property variable. 
 
 
-##### The rest url that validates the propertis variable looks like this:
+##### The rest url that validates the properties variable looks like this:
 
 ```shell
 http://localhost:8080/dynamicvalue
