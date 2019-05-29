@@ -72,6 +72,11 @@ It would be enough to declare what you want to override as environment propertie
 * result : this_is_docker_os_variable
 
 Here you have an example of how I launch a simple app environment with docker compose. As you see, I declare the 'dynamic.value' property here as an environment variable, so it overrides whatever you've got inside jar application.properties file.
+```yaml
+    environment:
+      dynamic.value : this_is_docker_os_variable
+```
+
 
 
 
