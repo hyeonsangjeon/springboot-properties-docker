@@ -79,6 +79,13 @@ Here you have an example of how I launch a simple app environment with docker co
 
 
 
+#### The environment variable dot(.) may not be override depending on the Springboot version. 
+Use underscore(_) instead of dot(.) in this case. Springboot will automatically convert the underscore(dynamic_value) to the dot(dynamic.value) with Springboot Relaxed Binding.
+
+```yaml
+    environment:
+      dynamic_value : this_is_docker_os_variable_unser_score
+```
 
 ### The priority rank according to the properties position is as follows.
 ```text
